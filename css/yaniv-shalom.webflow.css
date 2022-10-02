@@ -107,6 +107,7 @@ h2 {
   width: 100%;
   min-height: 800px;
   min-width: 100%;
+  margin-right: -77px;
   float: right;
 }
 
@@ -186,6 +187,10 @@ h2 {
   margin-left: -7px;
 }
 
+.nav-link.button-link.nav-link-contact {
+  width: 115px;
+}
+
 .nav-link.pix:hover {
   padding-bottom: 18px;
 }
@@ -198,6 +203,9 @@ h2 {
   -webkit-flex: 0 auto;
   -ms-flex: 0 auto;
   flex: 0 auto;
+  background-image: none;
+  background-position: 0px 0px;
+  background-size: auto;
 }
 
 .grid {
@@ -247,6 +255,7 @@ h2 {
 .heading.heading-consultation {
   color: #f85344;
   font-size: 70px;
+  text-align: right;
 }
 
 .heading.heading-main {
@@ -262,6 +271,8 @@ h2 {
 }
 
 .main-title {
+  position: relative;
+  z-index: 10;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -336,7 +347,7 @@ h2 {
 }
 
 .button-link.secondary {
-  margin-right: 1px;
+  margin-right: 81px;
   border-style: solid;
   border-width: 1px;
   border-color: #c7665d;
@@ -387,22 +398,36 @@ h2 {
   margin-left: auto;
 }
 
+.button-link.nav-link.nav-link-button.nav-link-contact {
+  margin-top: 0px;
+}
+
 .footer {
-  min-width: 1220px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   background-image: url('../images/Cover-background.jpg');
   background-position: 0px 0px;
   background-size: cover;
 }
 
 .personal-details {
-  margin-right: 160px;
+  margin-right: 88px;
   padding-top: 60px;
   padding-right: 0px;
 }
 
 .information {
   display: block;
-  width: 20%;
+  width: 30%;
+  margin-top: -278px;
   margin-right: -60px;
   padding-left: 0px;
   float: right;
@@ -433,7 +458,7 @@ h2 {
 .footer-grid {
   margin-top: 44px;
   margin-right: auto;
-  margin-left: -30px;
+  margin-left: -95px;
   padding-bottom: 50px;
   float: left;
   -ms-grid-columns: 1fr 1fr 1fr;
@@ -881,14 +906,25 @@ h2 {
   text-align: right;
 }
 
+.buttons-block {
+  display: block;
+  margin-right: 85px;
+  padding-right: 0px;
+}
+
 @media screen and (max-width: 991px) {
   .main-page.main-page-home {
     background-position: 24% 50%;
   }
 
   .main-page.main-page-consultation {
+    padding-bottom: 26px;
     background-position: 50% 0%;
     background-size: 1440px 730px;
+  }
+
+  .main-page.main-page-storytoscript {
+    padding-bottom: 30px;
   }
 
   .main-page.main-page-freetips {
@@ -990,6 +1026,10 @@ h2 {
     margin-right: 71px;
   }
 
+  .button-link.secondary:active {
+    margin-right: 8px;
+  }
+
   .button-link.button-link-onlinecourse {
     margin-top: 0px;
     margin-right: 0px;
@@ -1006,7 +1046,11 @@ h2 {
   }
 
   .information {
-    margin-right: 437px;
+    margin-right: 0px;
+  }
+
+  .footer-grid {
+    margin-left: -14px;
   }
 
   .footer-grid-link.footer-grid-link-home {
@@ -1107,8 +1151,17 @@ h2 {
     align-items: center;
   }
 
+  .main-page.main-page-consultation {
+    padding-bottom: 29px;
+  }
+
   .main-page.main-page-storytoscript {
+    padding-bottom: 23px;
     background-position: 0% 50%;
+  }
+
+  .main-page.main-page-whatsapp {
+    padding-bottom: 35px;
   }
 
   .main-page.main-page-contact {
@@ -1126,6 +1179,35 @@ h2 {
     right: 0%;
     bottom: auto;
     display: block;
+    width: 100px;
+  }
+
+  .nav-link.button-link.nav-link-contact {
+    margin-right: auto;
+  }
+
+  .nav-link.button-link.nav-link-contact:active {
+    margin-left: 30px;
+  }
+
+  .nav-link.button-link.nav-link-contact.w--current:active {
+    margin-left: 30px;
+  }
+
+  .nav-link.nav-link-about {
+    z-index: auto;
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: auto;
+    top: 0%;
+    right: 0%;
+    bottom: auto;
+    margin-right: 0px;
+    margin-left: 0px;
+    background-color: #3cb7f2;
+    background-image: none;
   }
 
   .heading.heading-consultation {
@@ -1134,27 +1216,75 @@ h2 {
   }
 
   .heading.heading-main {
-    margin-right: -145px;
+    margin-top: 0px;
+    margin-right: -183px;
+    text-align: center;
   }
 
   .x-large {
     padding-right: 3px;
-    font-size: 85px;
+    font-size: 80px;
   }
 
   .main-title {
+    margin-top: 100px;
+    padding-right: 190px;
     -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+    text-align: left;
+  }
+
+  .main-title.main-title-storytoscript {
+    margin-top: 130px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  .main-title.main-title-freetips {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  .main-title.main-title-consultation {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 0px;
+    padding-left: 0px;
+    text-align: right;
+  }
+
+  .main-title.main-title-whatsapp {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  .main-title.main-title-contact {
+    padding-right: 20px;
   }
 
   .grid-2 {
-    margin-right: 27px;
+    margin-top: -74px;
+    margin-right: -90px;
+  }
+
+  .button-link {
+    margin-right: 22px;
+  }
+
+  .button-link:active {
+    margin-right: 29px;
   }
 
   .button-link.secondary {
-    margin-right: -27px;
+    margin-right: 40px;
+  }
+
+  .button-link.secondary:active {
+    margin-right: -47px;
   }
 
   .button-link.button-about {
@@ -1162,33 +1292,90 @@ h2 {
     margin-bottom: 0px;
   }
 
+  .button-link.button-link-whatsapp {
+    margin-top: 20px;
+  }
+
+  .button-link.button-link-consultation {
+    margin-top: 61px;
+  }
+
   .footer {
     display: block;
+    min-width: 0px;
     margin-right: auto;
     margin-left: auto;
+    padding-bottom: 200px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
   }
 
   .personal-details {
+    position: absolute;
+    left: 26%;
+    top: auto;
+    right: auto;
+    bottom: -19%;
     display: block;
-    margin-right: 0px;
+    margin: 0px auto 339px;
+    padding-top: 0px;
+    text-align: right;
+  }
+
+  .personal-details.personal-details-about {
+    margin-bottom: 0px;
+  }
+
+  .personal-details.personal-details-online-course {
+    margin-bottom: 25px;
+  }
+
+  .personal-details.personal-details-consultation {
+    margin-bottom: 137px;
+  }
+
+  .personal-details.personal-details-storytoscript {
+    margin-bottom: 276px;
+  }
+
+  .personal-details.personal-details-freetips {
+    margin-bottom: 420px;
+  }
+
+  .personal-details.personal-details-home {
+    margin-bottom: 206px;
   }
 
   .information {
-    margin-right: 822px;
+    width: 100%;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: -207px;
+    padding-left: 0px;
+    text-align: center;
+  }
+
+  .smaller-letters {
+    text-align: center;
   }
 
   .footer-grid {
-    margin-right: auto;
+    position: static;
+    margin-top: 250px;
+    margin-right: 34px;
     margin-left: auto;
+    padding-bottom: 0px;
     -webkit-box-pack: end;
     -webkit-justify-content: end;
     -ms-flex-pack: end;
@@ -1251,8 +1438,19 @@ h2 {
     text-align: center;
   }
 
+  .image-3 {
+    position: relative;
+    left: 0%;
+    top: 0%;
+    right: auto;
+    bottom: 0%;
+  }
+
   .large {
-    font-size: 50px;
+    position: relative;
+    bottom: 20px;
+    font-size: 40px;
+    line-height: 70px;
   }
 
   .grid-3 {
@@ -1275,7 +1473,24 @@ h2 {
     width: 60%;
   }
 
+  .contact-name {
+    width: 330px;
+  }
+
+  .contact-email {
+    width: 330px;
+  }
+
+  .contact-phone {
+    width: 330px;
+  }
+
+  .textarea {
+    min-width: 330px;
+  }
+
   .main-page-consultation {
+    padding-bottom: 30px;
     -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
@@ -1339,26 +1554,55 @@ h2 {
   }
 
   .menu-button-2 {
-    position: static;
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 5;
+  }
+
+  .menu-button-3 {
+    position: absolute;
+    left: auto;
+    top: 0%;
+    right: 0%;
+    bottom: auto;
+    z-index: auto;
+    text-align: right;
+  }
+
+  .menu-button-4 {
+    background-color: #3cb7f2;
+  }
+
+  .menu-button-5 {
+    display: block;
+  }
+
+  .buttons-block {
+    margin-top: -58px;
+    margin-right: -224px;
   }
 }
 
 @media screen and (max-width: 479px) {
+  .main-page.main-page-home {
+    background-position: 22% 50%;
+  }
+
   .main-page.main-page-onlinecourse {
     padding-bottom: 427px;
   }
 
   .main-page.main-page-consultation {
     min-width: 300px;
-    padding-bottom: 0px;
+    padding-bottom: 430px;
   }
 
   .main-page.main-page-storytoscript {
-    padding-bottom: 600px;
+    padding-bottom: 575px;
   }
 
   .main-page.main-page-whatsapp {
-    padding-bottom: 150px;
+    padding-bottom: 450px;
   }
 
   .main-page.main-page-contact {
@@ -1368,9 +1612,9 @@ h2 {
 
   .main-page.main-page-freetips {
     margin-right: auto;
-    margin-bottom: -140px;
+    margin-bottom: 0px;
     margin-left: auto;
-    padding-bottom: 0px;
+    padding-bottom: 136px;
     background-position: 0% 0%;
     background-size: cover;
   }
@@ -1382,8 +1626,13 @@ h2 {
   }
 
   .intro {
-    margin-top: 24px;
+    position: relative;
+    z-index: 50;
+    margin-top: -66px;
+    margin-right: auto;
+    margin-left: auto;
     padding-top: 0px;
+    text-align: center;
   }
 
   .navbar {
@@ -1404,18 +1653,24 @@ h2 {
     text-align: center;
   }
 
+  .heading.heading-main {
+    margin-right: -116px;
+  }
+
   .x-large {
     font-size: 70px;
   }
 
   .main-title {
+    position: relative;
+    z-index: 10;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     height: 260px;
     min-width: auto;
-    margin-right: 87px;
+    margin-right: auto;
     margin-bottom: 0px;
     margin-left: auto;
     padding-right: 0px;
@@ -1438,21 +1693,62 @@ h2 {
     margin-bottom: 0px;
   }
 
+  .main-title.main-title-contact {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
   .grid-2 {
-    margin-top: -10px;
+    position: relative;
+    z-index: 20;
+    margin-top: -34px;
     margin-right: 0px;
-    margin-left: 0px;
+    margin-left: 133px;
+    justify-items: center;
+    -webkit-box-align: end;
+    -webkit-align-items: end;
+    -ms-flex-align: end;
+    align-items: end;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    grid-template-areas: "."
+      "Area"
+      "Area-2";
+    -ms-grid-columns: 2.75fr;
+    grid-template-columns: 2.75fr;
+    -ms-grid-rows: auto auto;
+    grid-template-rows: auto auto;
   }
 
   .button-link {
-    margin-top: -32px;
-    margin-right: -4px;
+    position: relative;
+    z-index: 30;
+    margin-top: 0px;
+    margin-right: 0px;
     margin-bottom: 0px;
   }
 
+  .button-link:active {
+    margin-right: 7px;
+  }
+
   .button-link.secondary {
-    margin-right: -118px;
-    margin-bottom: 0px;
+    position: static;
+    left: 0px;
+    top: 0px;
+    z-index: 30;
+    margin: 0px;
+    font-size: 22px;
+  }
+
+  .button-link.secondary:active {
+    margin-right: -111px;
+  }
+
+  .button-link.button-about {
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .button-link.button-link-onlinecourse {
@@ -1461,45 +1757,114 @@ h2 {
   }
 
   .button-link.button-link-freetips {
+    margin-top: 0px;
     margin-left: auto;
   }
 
   .button-link.button-link-whatsapp {
-    margin-top: 299px;
+    margin-top: 339px;
   }
 
   .button-link.button-link-consultation {
-    margin-top: 159px;
-  }
-
-  .button-link.button-link-storytoscript {
-    margin-top: 295px;
+    margin-top: 218px;
     margin-right: 0px;
   }
 
+  .button-link.button-link-storytoscript {
+    margin-top: 241px;
+    margin-right: 0px;
+  }
+
+  .button-link.button-link-contact {
+    margin-top: 20px;
+  }
+
   .footer {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
     margin-top: 0px;
-    margin-right: -891px;
+    margin-right: auto;
     padding-top: 0px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 
   .personal-details {
-    margin-right: auto;
-    margin-left: auto;
+    margin: 0px auto 80px;
+    padding-top: 0px;
     padding-right: 6px;
-    padding-bottom: 100px;
+    padding-bottom: 0px;
+  }
+
+  .personal-details.personal-details-about {
+    margin-bottom: -380px;
+  }
+
+  .personal-details.personal-details-online-course {
+    margin-bottom: 90px;
+  }
+
+  .personal-details.personal-details-consultation {
+    margin-bottom: 82px;
+  }
+
+  .personal-details.personal-details-storytoscript {
+    margin-bottom: -80px;
+    padding-right: 0px;
+  }
+
+  .personal-details.personal-details-freetips {
+    margin-bottom: 390px;
+  }
+
+  .personal-details.personal-details-whatsapp {
+    margin-bottom: 80px;
+  }
+
+  .personal-details.personal-details-home {
+    position: absolute;
+    margin-top: -210px;
+    margin-bottom: 200px;
+    padding-right: 0px;
   }
 
   .information {
-    margin-right: 960px;
+    position: absolute;
+    left: 23%;
+    top: auto;
+    right: auto;
+    bottom: 0%;
+    width: auto;
+    margin-top: -100px;
+    margin-right: 0px;
+    margin-left: 0px;
+    font-size: 22px;
     text-align: center;
   }
 
   .footer-grid {
-    margin-right: auto;
-    margin-left: 30px;
+    position: static;
+    margin-top: 200px;
+    margin-right: 42px;
+    margin-left: 60px;
     -ms-grid-columns: 0.75fr 0.5fr 0.75fr;
     grid-template-columns: 0.75fr 0.5fr 0.75fr;
+  }
+
+  .footer-grid.footer-grid-about {
+    margin-top: 220px;
+  }
+
+  .footer-grid.footer-grid-contact {
+    margin-top: 269px;
   }
 
   .footer-grid-link.footer-grid-link-home {
@@ -1577,6 +1942,7 @@ h2 {
   .page-text.page-text-about {
     height: 80%;
     margin-bottom: 62px;
+    text-align: center;
   }
 
   .page-text.page-text-storytoscript {
@@ -1586,6 +1952,8 @@ h2 {
   }
 
   .page-text.page-text-freetips {
+    padding-right: 0px;
+    padding-left: 0px;
     font-size: 20px;
   }
 
@@ -1629,55 +1997,137 @@ h2 {
   .contact-name {
     position: relative;
     right: -114px;
+    width: 280px;
     max-width: none;
   }
 
   .contact-email {
     position: relative;
     right: -113px;
+    width: 280px;
     max-width: none;
   }
 
   .contact-phone {
     position: relative;
     right: -110px;
+    width: 280px;
     max-width: none;
   }
 
   .textarea {
     position: relative;
-    right: 40px;
-    min-width: 170%;
+    right: -110px;
+    min-width: 280px;
+    margin-right: 36px;
     padding-right: 11px;
     text-align: right;
   }
 
   .submit-button.button-link {
     margin-top: 19px;
-    margin-right: 79px;
-    margin-left: -38px;
+    margin-right: 0px;
+    margin-left: 0px;
   }
 
   .form-block {
     position: relative;
     right: 49px;
     margin-top: 38px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .main-page-consultation {
-    padding-bottom: 288px;
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
-}
 
-#w-node-ee2ad967-017e-53f9-5e21-d82e1c32d7ce-2e66271b {
-  -ms-grid-column: span 1;
-  grid-column-start: span 1;
-  -ms-grid-column-span: 1;
-  grid-column-end: span 1;
-  -ms-grid-row: span 1;
-  grid-row-start: span 1;
-  -ms-grid-row-span: 1;
-  grid-row-end: span 1;
+  .menu-button-2 {
+    position: absolute;
+    left: auto;
+    top: 0%;
+    right: 0%;
+    bottom: auto;
+  }
+
+  .menu-button-4 {
+    position: absolute;
+    left: auto;
+    top: 0%;
+    right: 0%;
+    bottom: auto;
+    text-align: left;
+  }
+
+  .menu-button-5 {
+    position: fixed;
+    left: auto;
+    top: 0%;
+    right: 0%;
+    bottom: auto;
+  }
+
+  .menu-button-6 {
+    position: fixed;
+    left: auto;
+    top: 0%;
+    right: 0%;
+    bottom: auto;
+    background-color: transparent;
+  }
+
+  .menu-button-7 {
+    position: fixed;
+    left: auto;
+    top: 0%;
+    right: 0%;
+    bottom: auto;
+  }
+
+  .menu-button-8 {
+    position: fixed;
+    left: auto;
+    top: 0%;
+    right: 0%;
+    bottom: auto;
+  }
+
+  .menu-button-9 {
+    position: absolute;
+    left: auto;
+    top: 0%;
+    right: 0%;
+    bottom: auto;
+  }
+
+  .buttons-block {
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 50;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: -31px;
+    margin-right: -122px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+  }
 }
 
 #w-node-b225ed11-838b-6b45-3c36-13adbbfe98d4-2e66271b {
@@ -2555,6 +3005,19 @@ h2 {
   #w-node-_8ce5f0b4-9a58-054c-b262-ee690a245404-2e66271b {
     -ms-grid-column-align: auto;
     justify-self: auto;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  #w-node-b225ed11-838b-6b45-3c36-13adbbfe98d4-2e66271b {
+    -ms-grid-column: span 1;
+    grid-column-start: span 1;
+    -ms-grid-column-span: 1;
+    grid-column-end: span 1;
+    -ms-grid-row: span 1;
+    grid-row-start: span 1;
+    -ms-grid-row-span: 1;
+    grid-row-end: span 1;
   }
 }
 
